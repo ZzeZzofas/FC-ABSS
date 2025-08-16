@@ -5,29 +5,35 @@ description: "A feedback-controlled microalgae-bacteria system for tilapia waste
 created_at: "2025-06-23"
 ---
 
-## Total Time Spent: 83 Hours
+## Total Time Spent: 83 Hours  
 
 ---
 
 ### Day 1 – June 23  
 **Time Spent:** 6h  
 
-I started the day scribbling down the initial concept of the project. The main idea was to build a feedback-controlled system that combines microalgae and bacteria to clean tilapia wastewater. At first, it felt like a wild idea, but as I dug into papers on aquaculture water contents, it slowly started to make sense.  
+I started off with a blank page and a rough idea in my head: combining microalgae and bacteria into a system that could clean tilapia wastewater. At first, I wasn’t even sure what “wastewater purification” would mean in measurable terms, so I spent most of the morning digging through articles, datasets, and aquaculture reports. The main pollutants I kept seeing were nitrates, phosphates, and ammonia, along with organic solids. I made a note that my project should at least be able to address the nitrogen and phosphorus cycles since they are the biggest contributors to eutrophication.  
 
-I spent hours researching what’s actually in tilapia wastewater – nitrates, phosphates, organic matter. I wrote down a list of objectives and began sketching out how such a system would look if simulated.  
+By the afternoon, I had scribbled a set of objectives in my notebook:  
+1. Simulate a closed loop system with controlled feedback for light and temperature.  
+2. Track photosynthetic efficiency of algae under different conditions.  
+3. Estimate bacterial uptake of nutrients when oxygen levels shift.  
+4. Test overall purification efficiency across several 48-hour cycles.  
 
-Honestly, it felt less like “work” and more like an exploration. I was excited, but also a little overwhelmed. My notebook is already messy with arrows and random thoughts that don’t fully connect yet.  
+I also defined the simulation environment: tanks of different volumes (from 10L up to 50L) and varying aeration levels. I imagined what it would look like in real life — maybe even outdoors, under a greenhouse roof — but for now, I kept things digital.  
+
+It felt more like planning an experiment I’d run in my garage than any formal “project.” I even laughed at how messy my block diagrams turned out — crooked arrows, labels squeezed into corners. Still, I felt good about having a foundation.  
 
 ---
 
 ### Day 2 – June 24  
 **Time Spent:** 5h  
 
-The big decision today was finalizing the system’s conceptual design. I decided to integrate light and temperature feedback because both strongly affect algae growth. That felt like a breakthrough moment.  
+Today I forced myself to make the concept less abstract. I finalized the system’s design around two main feedback variables: **light intensity** and **temperature**. These are crucial because algae growth is sensitive to both. I decided the system should be able to dim LEDs or cut heater power depending on readings from sensors.  
 
-I drew out the block diagram and played around with a couple of options for how to represent the tank structure digitally. The diagram looked pretty abstract at first, but it gave me a sense of direction.  
+I sketched a block diagram of the overall design: input (sensor data) → controller logic → actuator (LEDs, heaters, pumps). It looked almost like a home automation setup, but for an aquarium. I also drafted alternative versions, like splitting light into red/blue channel control versus single intensity feedback.  
 
-Had tea while doodling some layout ideas – felt strangely calm, like piecing together a puzzle.  
+While doodling, I found myself sipping tea absentmindedly and daydreaming about what the tank would look like glowing at night. It felt less like “work” and more like imagining a pet project I’d love to build in real life.  
 
 - ![3d design for the prototype](images/image.png)  
 
@@ -36,9 +42,11 @@ Had tea while doodling some layout ideas – felt strangely calm, like piecing t
 ### Day 3 – June 25  
 **Time Spent:** 7h  
 
-I dug deep into finding which electronics would realistically work in such a setup. Even though I wasn’t actually buying hardware, I wanted the simulation to feel grounded. I spent hours comparing light setups and thinking about how photosynthetic rates respond under different CRI (color rendering index) values.  
+I shifted gears today and researched electronics that could realistically be used for the system. Even though I wasn’t buying hardware, I wanted to anchor the design in reality. I compared LED modules by lumen output, CRI, and wattage. I noted that CRI directly impacts photosynthetic efficiency, so I simulated several light spectra to see how algae responded in terms of growth rate.  
 
-After a while, my brain felt cooked from staring at graphs, but I forced myself to document every variation. It reminded me of how much patience science requires — sometimes it’s just you and a dozen “almost but not quite” results.  
+I also modeled light penetration in water at different depths (10 cm vs. 40 cm) and tested how much light would actually reach the algae mats near the bottom. The results showed that deeper tanks would require far higher light intensities or better reflectors. That gave me the idea of designing reflective walls later.  
+
+By evening, I was tired from staring at graphs of photosynthetic curves, but I still documented every run. I even muttered to myself, “algae are fussier than houseplants.”  
 
 - ![the 3d with rough texture](images/porr.jpg)  
 
@@ -47,29 +55,35 @@ After a while, my brain felt cooked from staring at graphs, but I forced myself 
 ### Day 4 – June 26  
 **Time Spent:** 6h  
 
-Temperature sensors became the focus. I searched for accurate waterproof options and simulated how a small heater would behave inside a sealed tank. The thermal response curves were slower than I expected, and I spent extra time calculating the delay between heater activation and water reaching equilibrium.  
+The focus today was **temperature**. I looked into different waterproof temperature sensors and listed their typical error ranges. For the simulation, I selected one with ±0.3 °C accuracy, since even a small error could throw off algae growth predictions.  
 
-It was tedious, but satisfying once the numbers started matching up. In the middle of this, I found myself wondering: if I actually built this, would the heater hum loudly? Funny how your brain wanders.  
+Next, I modeled a standard aquarium heater inside a sealed tank. I calculated how long it would take to heat 20 liters of water from 24 °C to 28 °C. The equations for specific heat capacity made me nostalgic about high school physics. My first run gave absurdly fast heating times, so I double-checked and realized I forgot to account for heat loss through the glass walls. Once I added that, the curve looked far more realistic.  
+
+I caught myself wondering how loud such a heater might sound in reality, or if it would hum. Funny thought, but it made the system feel more alive to me.  
 
 ---
 
 ### Day 5 – June 27  
 **Time Spent:** 5h  
 
-Today I designed the heating loop and simulated relay activations. Watching the heater profile change under different time controls was oddly entertaining. Energy consumption calculations were straightforward, but I caught myself overthinking whether I accounted for heat losses correctly.  
+Today I designed the **heating loop control**. I simulated how the heater would behave with relay activation every few minutes, instead of just being on/off constantly. The point was to balance energy consumption with stability.  
 
-At some point, I realized I was listening to the same song on repeat for almost an hour. Guess that means I was in the zone.  
+I logged the power draw per cycle and calculated daily energy consumption. To make it practical, I even imagined if someone ran this in a small aquaponics setup at home — would the electricity bill be acceptable? The numbers seemed fine: about the same as leaving a computer on all day.  
+
+Somewhere in between, I realized I had the same playlist looping for hours. I didn’t even notice until I looked up. Guess that means I was really in flow.  
 
 ---
 
 ### Day 6 – June 28  
 **Time Spent:** 5h  
 
-Light enclosure simulations took over today. I tested LED placement against the algae’s effective surface area. It was surprisingly tricky to find a “sweet spot” where light was distributed evenly.  
+Lighting again, but this time focusing on **enclosure design**. I simulated different placements of LEDs around the tank walls and ceiling, checking uniformity of light distribution. Some placements created intense hotspots that would scorch the algae, so I adjusted spacing and added reflective inner walls.  
 
-I also searched for light sensors with fast analog response times — not that I’ll be wiring them physically, but it helps to keep things realistic.  
+I calculated optimal LED placement angles by dividing the algae surface area into a grid and tracking lux values on each square. That gave me a heatmap that showed exactly where the light was weaker. I adjusted placements until the distribution became balanced.  
 
-Sometimes I wish I could actually see how the algae would glow under the lights I simulated.  
+I also researched light sensors with fast analog response, since the control loop needs real-time feedback.  
+
+By evening, I thought about how it would look to see algae “bathed” in that simulated light — almost like a futuristic fish tank.  
 
 - ![the 3d on simulation](images/por.jpg)  
 - ![Light intensity control circuit](images/image-2.png)  
@@ -79,9 +93,11 @@ Sometimes I wish I could actually see how the algae would glow under the lights 
 ### Day 7 – June 29  
 **Time Spent:** 5h  
 
-Electrical wiring and enclosure design were today’s tasks. I mapped everything out digitally and simulated the connections. Power draw calculations based on spec sheets gave me confidence that the design could, in theory, run efficiently.  
+Today was all about **wiring and enclosures**. I laid out the wiring plan for all modules and digitally simulated the electrical connections. I tested if the circuits would stay within safe current ranges.  
 
-Still, I laughed a little at how abstract this all is — running numbers on something that doesn’t physically exist in front of me.  
+Then I estimated total power draw by summing up each module’s consumption from spec sheets. The total was surprisingly low, meaning the system could theoretically run from a modest power source.  
+
+Even though I wasn’t physically wiring anything, mapping the wires felt oddly satisfying. It’s like solving a maze where the goal is “don’t overload the system.”  
 
 - ![circuit diagram for the feedback system of light intensity and temperature](images/image-1.png)  
 
@@ -90,18 +106,20 @@ Still, I laughed a little at how abstract this all is — running numbers on som
 ### Day 8 – June 30  
 **Time Spent:** 6h  
 
-Aeration patterns were the star of the day. I modeled oxygen pump placements and simulated water flow, then calculated oxygen diffusion curves. The data showed how oxygen availability directly affects bacterial uptake efficiency.  
+I modeled **aeration patterns**. The idea was to see how different placements of oxygen pumps changed dissolved oxygen distribution. I simulated both top-fed and bottom-fed air pumps and watched the flow circulate through the virtual tank.  
 
-It was one of those satisfying days where the simulation results aligned with my expectations. I rewarded myself with a late-night snack while reviewing the diffusion graphs.  
+From there, I calculated oxygen diffusion curves and plotted how quickly saturation was reached at different flow rates. This step was crucial because bacteria need oxygen to process nutrients.  
+
+It was fun to watch the little flow arrows spread out in the simulation. I rewarded myself with a snack while staring at the graphs — somehow, oxygen diffusion felt like an accomplishment.  
 
 ---
 
 ### Day 9 – July 1  
 **Time Spent:** 5h  
 
-I experimented with light shielding using foil-based enclosures. It was fascinating to see how light fluctuation could be reduced by adding reflective surfaces. I even looked up whether foil frames could stay structurally stable long-term.  
+Light shielding day. I tested reflective foil enclosures that surrounded the tank to prevent light leakage. The effect was dramatic — with shielding, light intensity fluctuation dropped by about 30%. I also looked into how structurally stable thin foil frames could be, because if they bend, the results fall apart.  
 
-The results made me smile — such a simple material making such a big difference in simulation.  
+It amazed me how something as ordinary as foil could change the efficiency so much.  
 
 - ![fully 3d colored](images/Picture51.png)  
 - ![temperature control circuit](images/image-3.png)  
@@ -111,34 +129,36 @@ The results made me smile — such a simple material making such a big differenc
 ### Day 10 – July 2  
 **Time Spent:** 5h  
 
-The control box layout was my focus. I simulated how it would behave under environmental stress, like blocked airflow or external heat exposure. Internal temperature rise was steeper than I expected.  
+I designed the **control box**. Digitally, I arranged where each component would sit: microcontroller, relay board, wiring paths, and ventilation. I ran a simulation of how hot the box would get if airflow was blocked. Unsurprisingly, it overheated quickly, which made me glad I added ventilation slots in the second design.  
 
-It’s funny, but designing the “box” was one of the most satisfying parts — maybe because I could imagine physically holding it.  
+It’s funny, but designing the box felt like one of the most “real” parts of the project. I could almost imagine holding it.  
 
 ---
 
 ### Day 11 – July 3  
 **Time Spent:** 5h  
 
-Simulated data logging today. I drafted CSV outputs for temperature and light data across a 30-day run. At one point, I accidentally simulated a storage failure and laughed at how realistic it felt — like even my digital systems have bad days.  
+Data logging simulation today. I planned for a 30-day run, storing values of light intensity, temperature, and dissolved oxygen. I formatted the logs into CSVs, each row marking a new reading every 10 seconds.  
+
+At one point, I simulated a storage overflow, and the “system” crashed. I couldn’t help but laugh — even in simulation, my designs find ways to break.  
 
 ---
 
 ### Day 12 – July 4  
 **Time Spent:** 5h  
 
-Researched nutrient measurement methods. Mostly dug into nitrate and phosphate sensing techniques. Simulated how each one responds over time.  
+I researched nutrient measurement techniques — mostly nitrate and phosphate detection. I logged the response times of ion-selective sensors and compared them against spectrophotometry. In simulation, I modeled how fast each detection system could update a feedback loop.  
 
-At some point I stopped and thought: I’ve been staring at “nutrient removal efficiency” graphs on July 4th while most people are out enjoying fireworks.  
+Somewhere in between, I realized it was July 4th, and while most people were out celebrating, I was staring at simulated phosphate curves. That made me laugh at myself.  
 
 ---
 
 ### Day 13 – July 5  
 **Time Spent:** 5h  
 
-I designed a 48-hour test cycle simulation and tracked nutrient drop rates every 6 hours. It was cool watching nitrogen and phosphorus levels graph out smoothly.  
+Ran a **48-hour test cycle simulation**. I set up nutrient levels at the start and recorded how they dropped every 6 hours. The nitrogen removal curve was smooth, phosphorus lagged slightly behind, but overall the results looked realistic.  
 
-The graphs looked satisfying, like progress bars slowly filling up.  
+I graphed everything, and the graphs honestly felt like little progress bars ticking forward. That gave me a weird sense of satisfaction.  
 
 - ![Results of removal rates and adjustment values](images/image-7.png)  
 
@@ -147,9 +167,9 @@ The graphs looked satisfying, like progress bars slowly filling up.
 ### Day 14 – July 6  
 **Time Spent:** 4h  
 
-Ran post-treatment simulations. The system achieved about 67% nitrate reduction, which felt like a real milestone. I charted the before-and-after values and compared them against similar studies.  
+I pushed the simulation further into **post-treatment efficiency**. The system achieved a 67% nitrate reduction and about 50% phosphorus reduction. Not perfect, but clearly an improvement. I charted the before-and-after values and overlaid them with similar published results for comparison.  
 
-It wasn’t perfect, but seeing numbers drop is always encouraging.  
+Seeing the nitrate levels drop so clearly made me feel like the project had “paid off.”  
 
 - ![removal rate of the pollutants.](images/image-4.png)  
 - ![Light intensity and temperature before adjustment](images/image-5.png)  
@@ -160,7 +180,9 @@ It wasn’t perfect, but seeing numbers drop is always encouraging.
 ### Day 15 – July 7  
 **Time Spent:** 4h  
 
-Finalized all 3D models and rendered some visuals for documentation. I also simulated failure scenarios — like what happens if the heater fails or light goes off unexpectedly. Watching the system “recover” in simulation felt like testing resilience in a game.  
+I finalized all 3D assets and rendered visuals for documentation. I also simulated failure scenarios: heater breaking, pump shutting off, lights going out. Each time, I watched how the system degraded and how recovery could be built in.  
+
+It almost felt like stress-testing a video game. Watching the algae struggle in simulation made me think of resilience differently — not just building a system that works, but one that can handle failure.  
 
 - ![the 3d with soft texture](images/porrr.jpg)  
 
@@ -169,9 +191,8 @@ Finalized all 3D models and rendered some visuals for documentation. I also simu
 ### Day 16 – July 8  
 **Time Spent:** 5h  
 
-I wrapped everything up today. Compiled the README, organized the journal, BOM, and schematics. I also went through all the images and references to make sure everything was in place.  
+Final wrap-up. I assembled the README, organized this journal, added the bill of materials, and sorted all the images.  
 
-Looking back, this project felt more like a personal journey than a technical requirement. It was just me exploring an idea at my own pace, sometimes getting lost in details, sometimes daydreaming while running simulations.  
+Looking back, the whole thing feels personal, like I built my own little ecosystem in silico. There were frustrating days, but also fun ones where I just let myself imagine glowing tanks of algae and bacteria working together. In a way, it felt less like engineering and more like world-building.  
 
 ---
-
