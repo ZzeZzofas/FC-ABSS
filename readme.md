@@ -13,10 +13,10 @@ Aquaculture systems often produce nutrient-rich wastewater that, if untreated, l
 - An oxygen pump ensures aerobic conditions for both bacteria and algae.
 
 ## Images
-- ![alt text](Picture51.png) 
-- ![alt text](por.jpg) 
-- ![alt text](porr.jpg) 
-- ![alt text](porrr.jpg)
+- ![alt text](images/Picture51.png) 
+- ![alt text](images/por.jpg) 
+- ![alt text](images/porr.jpg) 
+- ![alt text](images/porrr.jpg)
 ## Bill of Materials (BOM)
 
 | Component                         | Quantity | Estimated Cost | Link                                                                                  |
@@ -37,4 +37,5 @@ Aquaculture systems often produce nutrient-rich wastewater that, if untreated, l
 **Total: $269.4**
 
 ---
+
 
