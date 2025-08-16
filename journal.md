@@ -9,7 +9,7 @@ created_at: "2025-06-23"
 
 ---
 
-### 🗓️ Day 1 - June 23  
+###  Day 1 - June 23  
 **Time Spent:** 6h  
 **Activities:**  
 - Brainstormed the project concept: using microalgae-bacteria consortia  
@@ -18,7 +18,7 @@ created_at: "2025-06-23"
 
 ---
 
-### 🗓️ Day 2 - June 24  
+###  Day 2 - June 24  
 **Time Spent:** 5h  
 **Activities:**  
 - Finalized conceptual design: integrated light and temperature feedback  
@@ -27,7 +27,7 @@ created_at: "2025-06-23"
 
 ---
 
-### 🗓️ Day 3 - June 25  
+###  Day 3 - June 25  
 **Time Spent:** 7h  
 **Activities:**  
 - Searched for suitable electronics for the system  
@@ -36,7 +36,7 @@ created_at: "2025-06-23"
 
 ---
 
-### 🗓️ Day 4 - June 26  
+###  Day 4 - June 26  
 **Time Spent:** 6h  
 **Activities:**  
 - Selected accurate waterproof temperature sensors  
@@ -45,7 +45,7 @@ created_at: "2025-06-23"
 
 ---
 
-### 🗓️ Day 5 - June 27  
+###  Day 5 - June 27  
 **Time Spent:** 5h  
 **Activities:**  
 - Designed the heating loop diagram in simualtion 
@@ -54,7 +54,7 @@ created_at: "2025-06-23"
 
 ---
 
-### 🗓️ Day 6 - June 28  
+###  Day 6 - June 28  
 **Time Spent:** 5h  
 **Activities:**  
 - simulated 3D light enclosure
@@ -63,7 +63,7 @@ created_at: "2025-06-23"
 
 ---
 
-### 🗓️ Day 7 - June 29  
+###  Day 7 - June 29  
 **Time Spent:** 5h  
 **Activities:**  
 - Designed the wiring and enclosure model for all modules  
@@ -72,7 +72,7 @@ created_at: "2025-06-23"
 
 ---
 
-### 🗓️ Day 8 - June 30  
+###  Day 8 - June 30  
 **Time Spent:** 6h  
 **Activities:**  
 - Simulated aeration patterns with oxygen pump placement  
@@ -81,7 +81,7 @@ created_at: "2025-06-23"
 
 ---
 
-### 🗓️ Day 9 - July 1  
+###  Day 9 - July 1  
 **Time Spent:** 5h  
 **Activities:**  
 - Designed aluminum foil-based light shielding in CAD  
@@ -90,7 +90,7 @@ created_at: "2025-06-23"
 
 ---
 
-### 🗓️ Day 10 - July 2  
+###  Day 10 - July 2  
 **Time Spent:** 5h  
 **Activities:**  
 - Created the control box layout in CAD  
@@ -99,7 +99,7 @@ created_at: "2025-06-23"
 
 ---
 
-### 🗓️ Day 11 - July 3  
+###  Day 11 - July 3  
 **Time Spent:** 5h  
 **Activities:**  
 - Simulated data logging and storage requirements for 30-day runs  
@@ -108,7 +108,7 @@ created_at: "2025-06-23"
 
 ---
 
-### 🗓️ Day 12 - July 4  
+###  Day 12 - July 4  
 **Time Spent:** 5h  
 **Activities:**  
 - Researched nutrient measurement techniques  
@@ -117,7 +117,7 @@ created_at: "2025-06-23"
 
 ---
 
-### 🗓️ Day 13 - July 5  
+###  Day 13 - July 5  
 **Time Spent:** 5h  
 **Activities:**  
 - Designed test cycle setup (48-hour simulation)  
@@ -126,7 +126,7 @@ created_at: "2025-06-23"
 
 ---
 
-### 🗓️ Day 14 - July 6  
+###  Day 14 - July 6  
 **Time Spent:** 4h  
 **Activities:**  
 - Simulated post-treatment nutrient levels  
@@ -135,7 +135,7 @@ created_at: "2025-06-23"
 
 ---
 
-### 🗓️ Day 15 - July 7  
+###  Day 15 - July 7  
 **Time Spent:** 4h  
 **Activities:**  
 - Finalized 3D model assets and rendered for documentation  
@@ -144,7 +144,7 @@ created_at: "2025-06-23"
 
 ---
 
-### 🗓️ Day 16 - July 8  
+###  Day 16 - July 8  
 **Time Spent:** 5h  
 **Activities:**  
 - Created README and full project documentation  
@@ -154,16 +154,17 @@ created_at: "2025-06-23"
 ---
 
 ## Images
-- ![alt text](Picture51.png) 
-- ![alt text](por.jpg) 
-- ![alt text](porr.jpg) 
-- ![alt text](porrr.jpg)
-- ![3d design for the prototype](image.png)
-- ![circuit diagram for the feedback system of light intensity and temperature](image-1.png)
-- ![Light intensity control circuit](image-2.png)
-- ![emperature control circuit](image-3.png)
+- ![alt text](images/Picture51.png) 
+- ![alt text](images/por.jpg) 
+- ![alt text](images/porr.jpg) 
+- ![alt text](images/porrr.jpg)
+- ![3d design for the prototype](images/image.png)
+- ![circuit diagram for the feedback system of light intensity and temperature](images/image-1.png)
+- ![Light intensity control circuit](images/image-2.png)
+- ![emperature control circuit](images/image-3.png)
 **Expected Results**
-- ![removal rate of the pollutants.](image-4.png)
-- ![Light intensity and temperature before adjustment](image-5.png)
+- ![removal rate of the pollutants.](images/image-4.png)
+- ![Light intensity and temperature before adjustment](images/image-5.png)
 - ![Light intensity and temperature after adjustment](image-6.png)
+
 - ![ Results of removal rates and adjustment values](image-7.png)
