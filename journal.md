@@ -165,6 +165,6 @@ created_at: "2025-06-23"
 **Expected Results**
 - ![removal rate of the pollutants.](images/image-4.png)
 - ![Light intensity and temperature before adjustment](images/image-5.png)
-- ![Light intensity and temperature after adjustment](image-6.png)
+- ![Light intensity and temperature after adjustment](images/image-6.png)
+- ![ Results of removal rates and adjustment values](images/image-7.png)
 
-- ![ Results of removal rates and adjustment values](image-7.png)
