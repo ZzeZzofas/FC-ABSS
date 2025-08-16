@@ -9,7 +9,7 @@ Aquaculture systems often produce nutrient-rich wastewater that, if untreated, l
 ## System Overview
 - Microalgae-bacteria consortia remove nitrogen and phosphorus from the wastewater.
 - Light feedback loop: An LDR monitors intensity; ESP32 adjusts a high-CRI LED strip accordingly.
-- Temperature feedback loop: A DS18B20 sensor monitors water temperature; the ESP32 switches a heater via a relay module.
+- Temperature feedback loop: A DS18B20 sensor monitors water temperature; the microcontroller switches a heater via a relay module.
 - An oxygen pump ensures aerobic conditions for both bacteria and algae.
 
 ## Images
@@ -37,5 +37,6 @@ Aquaculture systems often produce nutrient-rich wastewater that, if untreated, l
 **Total: $269.4**
 
 ---
+
 
 
