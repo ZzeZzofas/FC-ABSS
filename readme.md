@@ -21,19 +21,20 @@ Aquaculture systems often produce nutrient-rich wastewater that, if untreated, l
 
 | Component                         | Quantity | Estimated Cost | Link                                                                                  |
 |----------------------------------|----------|----------------|---------------------------------------------------------------------------------------|
-| Raspberry Pi 5 (4GB)             | 1        | $109.27        | [RAM-E-Shop](https://www.ram-e-shop.com/ar/shop/rpi5-board-4gb-raspberry-pi-5-4gb-8882) |
-| Aluminum Case for Pi             | 1        | $7.59          | [RAM-E-Shop](https://www.ram-e-shop.com/ar/shop/rpi5-box-aluminum-enclosure-for-raspberry-pi-5-stripe-metal-aluminum-case-9202) |
-| Channel 5V Relay Module          | 1        | $10.00         | Amazon, Reddit, etc.                                                                  |
-| 12V LED Strip (High-CRI)         | 1        | $25.00         |                                       |
-| DS18B20 Temp Sensor (Premium)    | 1        | ~$15.00        | Multiple sources                                                                      |
-| LDR Light Sensor Module          | 1        | ~$4.50         | [example](reddit.com+13amazon.eg+13noon.com+13) sources                                                                      |
-| Aquarium Heater                  | 1        | $35.00         | -                                                                                     |
-| Oxygen Pump (Aquaculture-grade) | 1        | $20.00         | -                                                                                     |
-| Aluminum Foil Shielding + Frame | 1        | $5.00          | -                                                                                     |
-| 12V, 5A Power Adapter            | 3        | $20.00         | -                                                                                     |
-| Jumper Wires + Connectors Kit   | 1        | $8.00          | -                                                                                     |
-| Plastic IP-rated Control Box    | 2        | $15.00         | -                                                                                     |
+| Arduino Mega             | 1        | $75.00        | [RAM-E-Shop](https://www.amazon.eg/-/en/DIY-Kit-Arduino-Mega-Microcontroller-Rev3/dp/B0D7WG8BZF) |
+| Custom I/O Expansion Shield for Arduino Mega	            | 1        | $21         | [RAM-E-Shop](https://www.ram-e-shop.com/ar/shop/rpi-phat-io-exp-io-expansion-hat-for-raspberry-pi-5-4b-3b-8267) |
+| Channel 5V Relay Module          | 1        | $10.00         | [link](https://www.amazon.eg/Relay-Module-16-Channel-5V/dp/B0B6RP69BT/)                                                                 |
+| 12V LED Strip (High-CRI)         | 1        | $6.00         |   [Link](https://www.amazon.eg/-/en/dobestyou-Decorative-Purposes-SMD2835-Waterproof/dp/B0B1DP8685/)                                    |
+| DS18B20 Temp Sensor (Premium)    | 1        | ~$50.00        | [Link](https://ar.aliexpress.com/item/1005008477970186.html?)                                                                       |
+| LDR Light Sensor Module          | 1        | ~$8.50         | [Link](https://www.amazon.eg/-/en/10Pcs-Photosensitive-Resistor-Sensor-Module/dp/B0CGNJ5CRT/)                                                                      |
+| Aquarium Heater                  | 1        | $13.00         | [Link](https://ar.aliexpress.com/item/1005001803652936.html?)                                                                                       |
+| Oxygen Pump | 1        | $26.20         | [Link](https://ar.aliexpress.com/item/1005009196812461.html?)                                                                                       |
+| Light Shielding Frame	 | 1        | $4.30          | [Link](https://ar.aliexpress.com/item/1005005534687013.html?)                                                                                       |
+| 12V, 5A Power Adapter            | 3        | $36.00         | [Link](https://ar.aliexpress.com/item/1005004623323483.html?)                                                                                       |
+| Jumper Wires  | 1        | $6.00          | [Link](https://ar.aliexpress.com/item/1005008637857128.html?)                                                                                       |
+| Plastic IP-rated Control Box    | 2        | $13.40         | [Link](https://ar.aliexpress.com/item/1005004340658589.html?)                                                                                       |
 
-**Total: $274.36**
+**Total: $269.4**
 
 ---
+
