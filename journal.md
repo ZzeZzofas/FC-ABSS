@@ -154,17 +154,18 @@ created_at: "2025-06-23"
 ---
 
 ## Images
-- ![alt text](images/Picture51.png) 
-- ![alt text](images/por.jpg) 
-- ![alt text](images/porr.jpg) 
-- ![alt text](images/porrr.jpg)
+- ![fully 3d colored](images/Picture51.png) 
+- ![the 3d on simulation](images/por.jpg) 
+- ![the 3d with rough texture](images/porr.jpg) 
+- ![the 3d with soft texture](images/porrr.jpg)
 - ![3d design for the prototype](images/image.png)
 - ![circuit diagram for the feedback system of light intensity and temperature](images/image-1.png)
 - ![Light intensity control circuit](images/image-2.png)
-- ![emperature control circuit](images/image-3.png)
+- ![temperature control circuit](images/image-3.png)
 **Expected Results**
 - ![removal rate of the pollutants.](images/image-4.png)
 - ![Light intensity and temperature before adjustment](images/image-5.png)
 - ![Light intensity and temperature after adjustment](images/image-6.png)
 - ![ Results of removal rates and adjustment values](images/image-7.png)
+
 
