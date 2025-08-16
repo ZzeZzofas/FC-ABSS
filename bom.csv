@@ -1,5 +1,5 @@
 Component,Quantity,Price (USD),Link
-Arduino Mega 2560,Main controller with plenty of I/O for multiple sensors- fans- and servo valves,75,https://www.amazon.eg/-/en/DIY-Kit-Arduino-Mega-Microcontroller-Rev3/dp/B0D7WG8BZF
+Arduino Mega ,Main controller with plenty of I/O for multiple sensors- fans- and servo valves,75,https://www.amazon.eg/-/en/DIY-Kit-Arduino-Mega-Microcontroller-Rev3/dp/B0D7WG8BZF
 Custom I/O Expansion Shield for Arduino Mega,Adds more power and signal terminals for managing multiple active components,21,https://www.ram-e-shop.com/ar/shop/rpi-phat-io-exp-io-expansion-hat-for-raspberry-pi-5-4b-3b-8267
 Channel 5V Relay Module,1,10.00,https://www.amazon.eg/Relay-Module-16-Channel-5V/dp/B0B6RP69BT/
 12V LED Strip (High-CRI),1,6.00,https://www.amazon.eg/-/en/dobestyou-Decorative-Purposes-SMD2835-Waterproof/dp/B0B1DP8685/
@@ -12,4 +12,5 @@ Light Shielding Frame,1,4.30,https://ar.aliexpress.com/item/1005005534687013.htm
 Jumper Wires + Kit,1,6.00,https://ar.aliexpress.com/item/1005008637857128.html?
 Plastic IP-rated Control Box,2,13.40,https://ar.aliexpress.com/item/1005004340658589.html?
 TOTAL,,269.4,
+
 
